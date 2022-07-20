@@ -1,3 +1,6 @@
+CREATE DATABASE kano DEFAULT CHARSET=utf8;
+USE kano;
+SOURCE kano.sql;
 DROP TABLE IF EXISTS `kano_rank`;
 CREATE TABLE `kano_rank` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -11,6 +14,4 @@ CREATE TABLE `kano_rank` (
   PRIMARY KEY (`id`),
   UNIQUE (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-CREATE DATABASE kano DEFAULT CHARSET=utf8;
-USE kano;
-SOURCE kano.sql;
+
